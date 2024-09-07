@@ -19,8 +19,72 @@
         padding: 0;
         font-family: "Roboto", sans-serif;
       }
-      textarea::placeholder {
-        color: #5f5f5f;
+      .inline_grid {
+        display: inline-grid !important;
+      }
+      @media only screen and (max-width: 576px) {
+        .w_100 {
+          width: 100% !important;
+        }
+        .logo_width {
+          width: 269px !important;
+          height: inherit !important;
+        }
+        .padding_30_16 {
+          padding: 30px 16px !important;
+        }
+        .textarea_modification {
+          max-width: 223px !important;
+          height: 81px !important;
+        }
+        .pb_23 {
+          padding-bottom: 20px !important;
+        }
+        .footer_logo_padding {
+          padding: 21px 0 !important;
+        }
+        .p_15_20 {
+          padding: 15px 0 20px !important;
+        }
+        .pt_15 {
+          padding-top: 15px !important;
+        }
+        .pb_15 {
+          padding-bottom: 15px !important;
+        }
+        .main_padding {
+          padding: 0 0 40px !important;
+        }
+        .px_20 {
+          padding: 0 20px !important;
+        }
+        .d_inline_grid {
+          display: inline-grid !important;
+        }
+        .text_center {
+          text-align: center !important;
+        }
+        .pt_20 {
+          padding-top: 20px !important;
+        }
+        .pb_23 {
+          padding-bottom: 20px !important;
+        }
+        .pr_0 {
+          padding-right: 0 !important;
+        }
+
+        .px_0 {
+          padding: 0 0 !important;
+        }
+
+        .h_40 {
+          height: 40px !important;
+        }
+
+        .fs_32 {
+          font-size: 32px !important;
+        }
       }
     </style>
   </head>
@@ -35,10 +99,11 @@
       <tbody>
         <tr>
           <td
+            class="main_padding"
             cellpadding="0"
             cellspacing="0"
             border="0"
-            style="width: 100%; padding: 0 6px 80px"
+            style="width: 100%; padding: 0 0px 80px"
           >
             <center style="width: 100%; table-layout: fixed">
               <table
@@ -51,6 +116,7 @@
                   <!-- logo -->
                   <tr>
                     <td
+                      class="padding_30_16"
                       style="
                         width: 100%;
                         background-color: #00a2ff;
@@ -71,6 +137,7 @@
                               alt="logo"
                               width="529"
                               height="67.98"
+                              class="w_100 logo_width"
                             />
                           </td>
                         </tr>
@@ -97,12 +164,14 @@
                   <!-- body -->
                   <tr>
                     <td
+                      class="px_20"
                       style="
                         width: 100%;
                         background-image: url(https://i.postimg.cc/Z5GtcR9w/blue-bg.png);
-                        background-size: 100% 20%;
+                        background-size: 100% 7%;
                         background-position: top;
                         background-repeat: no-repeat;
+                        background-color: #e9ecf1;
                       "
                     >
                       <table
@@ -114,12 +183,15 @@
                           max-width: 650px;
                           margin: 0 auto;
                           background-color: white;
-                          border-radius: 29px;
+                          border-radius: 19px;
                         "
                       >
                         <!-- feedback -->
                         <tr>
-                          <td style="width: 100%; padding: 91px 24px 40px">
+                          <td
+                            class="padding_30_16"
+                            style="width: 100%; padding: 91px 24px 40px"
+                          >
                             <table
                               cellpadding="0"
                               cellspacing="0"
@@ -151,7 +223,7 @@
                                 </td>
                               </tr>
                               <tr>
-                                <td style="padding-bottom: 24px">
+                                <td class="pb_15" style="padding-bottom: 24px">
                                   <p
                                     style="
                                       font-size: 14px;
@@ -170,16 +242,17 @@
                                 </td>
                               </tr>
                               <tr>
-                                <td style="text-align: center">
+                                <td style="text-align: center; padding: 0 87px;">
                                   <textarea
                                     placeholder="Your Message"
+                                    class="textarea_modification"
                                     style="
                                       font-weight: normal;
                                       font-size: 14px;
                                       line-height: 120%;
                                       color: #5f5f5f;
-                                      max-width: 462px !important;
-                                      height: 146px !important;
+                                      max-width: 462px;
+                                      height: 146px;
                                       width: 100%;
                                       padding: 16px;
                                       border: 1px solid #0000001a;
@@ -199,6 +272,7 @@
                                   </style><!
                                 [endif]-->
                                 <td
+                                  class="pt_15"
                                   style="
                                     width: 100%;
                                     text-align: center;
@@ -252,12 +326,13 @@
                         <!-- footer -->
                         <tr>
                           <td
+                            class="padding_30_16"
                             style="
                               width: 100%;
                               padding: 45px 60px;
                               background-color: #00a2ff;
-                              border-bottom-left-radius: 29px;
-                              border-bottom-right-radius: 29px;
+                              border-bottom-left-radius: 19px;
+                              border-bottom-right-radius: 19px;
                             "
                           >
                             <table
@@ -267,7 +342,7 @@
                               style="width: 100%"
                             >
                               <tr>
-                                <td style="padding-bottom: 40px">
+                                <td class="pb_23" style="padding-bottom: 40px">
                                   <table
                                     cellpadding="0"
                                     cellspacing="0"
@@ -287,7 +362,7 @@
                                       >
                                         <img
                                           src="https://i.postimg.cc/5yMdBydn/high-performer.png"
-                                          alt="high-performe"
+                                          alt="high-performer"
                                           width="47"
                                           height="53"
                                         />
@@ -362,44 +437,55 @@
                                   >
                                     <tr>
                                       <td style="padding-right: 12px">
-                                        <img
-                                          width="24"
-                                          height="24"
-                                          src="https://i.postimg.cc/mrv2nbWF/linkedin-icon.png"
-                                          alt="insta-logo"
-                                        />
+                                        <a href="#" class="inline_grid">
+                                          <img
+                                            class="inline_grid"
+                                            width="24"
+                                            height="24"
+                                            src="https://i.postimg.cc/mrv2nbWF/linkedin-icon.png"
+                                            alt="linkedin-icon"
+                                          />
+                                        </a>
                                       </td>
                                       <td style="padding-right: 12px">
-                                        <img
-                                          width="24"
-                                          height="24"
-                                          src="https://i.postimg.cc/jSCxdWs7/twitter-icon.png"
-                                          alt="insta-logo"
-                                        />
+                                        <a href="#" class="inline_grid">
+                                          <img
+                                            width="24"
+                                            height="24"
+                                            src="https://i.postimg.cc/jSCxdWs7/twitter-icon.png"
+                                            alt="twitter-ico"
+                                          />
+                                        </a>
                                       </td>
                                       <td style="padding-right: 12px">
-                                        <img
-                                          width="24"
-                                          height="24"
-                                          src="https://i.postimg.cc/V691HnF3/insta-icon.png"
-                                          alt="insta-logo"
-                                        />
+                                        <a href="#" class="inline_grid">
+                                          <img
+                                            width="24"
+                                            height="24"
+                                            src="https://i.postimg.cc/V691HnF3/insta-icon.png"
+                                            alt="insta-icon"
+                                          />
+                                        </a>
                                       </td>
                                       <td style="padding-right: 12px">
-                                        <img
-                                          width="24"
-                                          height="24"
-                                          src="https://i.postimg.cc/tCvbfXhC/facebook.png"
-                                          alt="insta-logo"
-                                        />
+                                        <a href="#" class="inline_grid">
+                                          <img
+                                            width="24"
+                                            height="24"
+                                            src="https://i.postimg.cc/tCvbfXhC/facebook.png"
+                                            alt="facebook"
+                                          />
+                                        </a>
                                       </td>
                                       <td style="padding-right: 12px">
-                                        <img
-                                          width="24"
-                                          height="24"
-                                          src="https://i.postimg.cc/3x6KyKRb/u-tube-icon.png"
-                                          alt="insta-logo"
-                                        />
+                                        <a href="#" class="inline_grid">
+                                          <img
+                                            width="24"
+                                            height="24"
+                                            src="https://i.postimg.cc/3x6KyKRb/u-tube-icon.png"
+                                            alt="u-tube-icon"
+                                          />
+                                        </a>
                                       </td>
                                     </tr>
                                   </table>
@@ -407,6 +493,7 @@
                               </tr>
                               <tr>
                                 <td
+                                  class="footer_logo_padding"
                                   style="
                                     text-align: center;
                                     padding: 40px 0 24px;
@@ -416,7 +503,7 @@
                                   <img
                                     width="241"
                                     height="32"
-                                    src="https://i.postimg.cc/FF2gxS69/usercentrics-logo.png"
+                                    src="https://i.postimg.cc/hvfn46nq/footer-logo.png"
                                     alt=""
                                   />
                                 </td>
@@ -453,7 +540,7 @@
                                         "
                                       >
                                         Corporate Jurisdiction: Munich, Regional
-                                        Court HRB 241272 
+                                        Court HRB 241272
                                       </td>
                                     </tr>
                                   </table>
@@ -461,6 +548,7 @@
                               </tr>
                               <tr>
                                 <td
+                                  class="p_15_20"
                                   style="
                                     padding: 20px 0 24px;
                                     text-align: center;
@@ -499,7 +587,10 @@
                         </tr>
                         <!-- footer-link -->
                         <tr>
-                          <td  style="padding-top: 24px;">
+                          <td
+                            class="pt_15"
+                            style="padding-top: 24px; background-color: #e9ecf1"
+                          >
                             <table
                               cellpadding="0"
                               cellspacing="0"
@@ -538,10 +629,10 @@
                                       text-decoration: underline;
                                     "
                                   >
-                                   Terms & conditions
+                                    Terms & conditions
                                   </a>
                                 </td>
-                                <td style="padding-right: 23px">
+                                <td>
                                   <a
                                     class="inline_grid"
                                     href="#privacy-policy"

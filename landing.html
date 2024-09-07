@@ -22,6 +22,9 @@
       .inline_grid {
         display: inline-grid !important;
       }
+      .h_146 {
+        height: 146px !important;
+      }
       @media only screen and (max-width: 576px) {
         .w_100 {
           width: 100% !important;
@@ -55,8 +58,8 @@
         .main_padding {
           padding: 0 0 40px !important;
         }
-        .px_20 {
-          padding: 0 20px !important;
+        .px_0 {
+          padding: 0 0 !important;
         }
         .d_inline_grid {
           display: inline-grid !important;
@@ -72,10 +75,6 @@
         }
         .pr_0 {
           padding-right: 0 !important;
-        }
-
-        .px_0 {
-          padding: 0 0 !important;
         }
 
         .h_40 {
@@ -164,7 +163,6 @@
                   <!-- body -->
                   <tr>
                     <td
-                      class="px_20"
                       style="
                         width: 100%;
                         background-image: url(https://i.postimg.cc/Z5GtcR9w/blue-bg.png);
@@ -172,6 +170,7 @@
                         background-position: top;
                         background-repeat: no-repeat;
                         background-color: #e9ecf1;
+                        padding: 0 10px;
                       "
                     >
                       <table
@@ -182,7 +181,6 @@
                           width: 100%;
                           max-width: 650px;
                           margin: 0 auto;
-                          background-color: white;
                           border-radius: 19px;
                         "
                       >
@@ -190,7 +188,13 @@
                         <tr>
                           <td
                             class="padding_30_16"
-                            style="width: 100%; padding: 91px 24px 40px"
+                            style="
+                              width: 100%;
+                              padding: 91px 24px 40px;
+                              background-color: white;
+                              border-top-right-radius: 19px;
+                              border-top-left-radius: 19px;
+                            "
                           >
                             <table
                               cellpadding="0"
@@ -242,10 +246,13 @@
                                 </td>
                               </tr>
                               <tr>
-                                <td style="text-align: center; padding: 0 87px;">
+                                <td
+                                  class="px_0 h_146"
+                                  style="text-align: center; padding: 0 87px"
+                                >
                                   <textarea
                                     placeholder="Your Message"
-                                    class="textarea_modification"
+                                    class="textarea_modification h_146"
                                     style="
                                       font-weight: normal;
                                       font-size: 14px;
